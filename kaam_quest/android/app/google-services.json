@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "449658428178",
+    "project_id": "kaamquest",
+    "storage_bucket": "kaamquest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449658428178:android:7d334653c26df131fff1cb",
+        "android_client_info": {
+          "package_name": "com.pnn.kaam_quest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449658428178-8h3i27g1uhbcbd3fuvegvgmdbun22ero.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzujdZfWAlv6W0RMRWBmObWENprcS0lNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449658428178-8h3i27g1uhbcbd3fuvegvgmdbun22ero.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "449658428178-sog8no3u7f8l314bde3smef00qqc20t3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.pnn.kaamQuest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
