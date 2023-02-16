@@ -7,14 +7,22 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:449658428178:android:7d334653c26df131fff1cb",
+        "mobilesdk_app_id": "1:449658428178:android:4305663d2336590ffff1cb",
         "android_client_info": {
-          "package_name": "com.pnn.kaam_quest"
+          "package_name": "com.pnn.kaamQuest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "449658428178-8h3i27g1uhbcbd3fuvegvgmdbun22ero.apps.googleusercontent.com",
+          "client_id": "449658428178-b03noenkohu7l51tpcjead9cko0cfbka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pnn.kaamQuest",
+            "certificate_hash": "ec6aec445bf21c27a745e14ece011e40a27febef"
+          }
+        },
+        {
+          "client_id": "449658428178-i2tj8ch42of84nnr816g967cdqn2f3i8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

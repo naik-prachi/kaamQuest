@@ -69,7 +69,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '449658428178',
     projectId: 'kaamquest',
     storageBucket: 'kaamquest.appspot.com',
-    iosClientId: '449658428178-sog8no3u7f8l314bde3smef00qqc20t3.apps.googleusercontent.com',
+    iosClientId:
+        '449658428178-sog8no3u7f8l314bde3smef00qqc20t3.apps.googleusercontent.com',
     iosBundleId: 'com.pnn.kaamQuest',
   );
 }
