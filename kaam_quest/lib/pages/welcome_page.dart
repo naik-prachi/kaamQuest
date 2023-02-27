@@ -1,11 +1,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:kaam_quest/components/bottom_nav_bar.dart';
-import 'package:kaam_quest/components/side_menu_drawer.dart';
-import 'package:kaam_quest/pages/home_page.dart';
-import 'package:kaam_quest/pages/onboarding_screen.dart';
-import 'package:kaam_quest/pages/search_page.dart';
-import 'package:kaam_quest/services/auth_controller.dart';
+
 import 'package:kaam_quest/services/google_auth_service.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +17,7 @@ class WelcomePage extends StatelessWidget {
     double h = MediaQuery.of(context).size.height;
     return Scaffold(
       //resizeToAvoidBottomInset: false,
-      backgroundColor: Color.fromARGB(255, 41, 38, 67),
+
       body: Column(
         children: [
           //image container
@@ -38,9 +34,7 @@ class WelcomePage extends StatelessWidget {
                 ),
             child: Column(
               children: [
-                SizedBox(
-                  height: h * 0.16,
-                ),
+                SizedBox(height: h * 0.16),
                 const CircleAvatar(
                   backgroundColor: Color.fromRGBO(233, 158, 118, 0.9),
                   radius: 60,
@@ -66,7 +60,6 @@ class WelcomePage extends StatelessWidget {
                   "Welcome",
                   style: TextStyle(
                     fontSize: 36,
-                    color: Color.fromARGB(255, 187, 171, 184),
                   ),
                 ),
                 AutoSizeText(
@@ -88,7 +81,9 @@ class WelcomePage extends StatelessWidget {
           MyButton(
             btnText: "Continue",
             onTap: () => Get.to(
-              () => const NavBar(),
+              () => NavBar(
+                email: email,
+              ),
             ),
           ),
 

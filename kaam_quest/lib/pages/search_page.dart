@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:kaam_quest/data/recently_added_projects.dart';
 
-import '../components/bottom_nav_bar.dart';
 import '../components/list_job_card.dart';
-import '../components/my_button.dart';
-import '../data/for_you.dart';
+import '../components/search_bar.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
@@ -20,20 +18,26 @@ class _SearchPageState extends State<SearchPage> {
     return Scaffold(
       extendBody: true,
       resizeToAvoidBottomInset: false,
+
       // can wrap scaffold in safearea too
-      backgroundColor: const Color.fromARGB(255, 41, 38, 67),
+
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         //mainAxisSize: MainAxisSize.min,
         children: [
-          const SizedBox(height: 60),
+          //const SizedBox(height: 60),
 
           const SizedBox(height: 40),
 
-          const SizedBox(height: 15),
+          //const SizedBox(height: 15),
 
+// search bar
+          const SizedBox(
+            height: 86,
+            child: SearchBar(),
+          ),
           // search bar
-          Padding(
+          /*Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Row(
               children: [
@@ -91,7 +95,7 @@ class _SearchPageState extends State<SearchPage> {
               ],
             ),
           ),
-
+*/
           const SizedBox(height: 70),
 
           // recently added -> job tiles
@@ -140,7 +144,7 @@ class _SearchPageState extends State<SearchPage> {
       ),
 
       // nav bar
-      bottomNavigationBar: const NavBar(),
+      //bottomNavigationBar: const NavBar(),
     );
   }
 }

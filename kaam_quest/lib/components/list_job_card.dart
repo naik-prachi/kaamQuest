@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class ListJobCard extends StatelessWidget {
   final String companyName;
   final String jobTitle;
+
   final String logoImagePath;
   final int hourlyRate;
 
@@ -21,7 +22,8 @@ class ListJobCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
-          color: Color.fromARGB(255, 119, 100, 130),
+          color: Colors.grey,
+          //Color.fromARGB(255, 119, 100, 130),
           //border: Border.all(color: const Color.fromARGB(255, 187, 171, 184)),
           borderRadius: BorderRadius.circular(8),
         ),
@@ -36,7 +38,8 @@ class ListJobCard extends StatelessWidget {
                   child: Container(
                     padding: const EdgeInsets.all(10),
                     height: 50,
-                    color: const Color.fromARGB(255, 187, 171, 184), //shadyLady
+                    color: Colors.grey[600],
+                    //const Color.fromARGB(255, 187, 171, 184), //shadyLady
                     child: Image.asset(logoImagePath),
                   ),
                 ),
@@ -53,7 +56,7 @@ class ListJobCard extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 16.5,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                        color: Colors.black87,
                       ),
                     ),
 
@@ -64,7 +67,7 @@ class ListJobCard extends StatelessWidget {
                       companyName,
                       style: const TextStyle(
                         fontSize: 13,
-                        color: Colors.white,
+                        color: Colors.black87,
                       ),
                     ),
                   ],

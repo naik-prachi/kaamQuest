@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:kaam_quest/components/bottom_nav_bar.dart';
 import 'package:kaam_quest/pages/login_page.dart';
 import 'package:kaam_quest/pages/welcome_page.dart';
 
@@ -39,7 +40,7 @@ class AuthController extends GetxController {
       print("login page");
       Get.offAll(() => LoginPage());
     } else {
-      Get.offAll(() => WelcomePage(email: user.email!));
+      Get.offAll(() => NavBar(email: user.email!));
     }
   }
 

@@ -2,14 +2,29 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:kaam_quest/pages/chat_page.dart';
 import 'package:kaam_quest/pages/home_page.dart';
+import 'package:kaam_quest/pages/job_desc_page.dart';
 import 'package:kaam_quest/pages/onboarding_screen.dart';
 import 'package:kaam_quest/pages/search_page.dart';
 
 import 'search_bar.dart';
 
+// You can pass any object to the arguments parameter.
+// In this example, create a class that contains both
+// a customizable title and message.
+class ScreenArguments {
+  final String email;
+
+  ScreenArguments(this.email);
+}
+
 class NavBar extends StatefulWidget {
-  const NavBar({super.key});
+  String email;
+  NavBar({
+    super.key,
+    required this.email,
+  });
 
   @override
   State<NavBar> createState() => _NavBarState();
@@ -19,9 +34,9 @@ class _NavBarState extends State<NavBar> {
   // nav pages
   List pages = const [
     HomePage(),
-    OnBoardingScreen(),
-    SearchBar(),
-    SearchBar(),
+    JobDescription(),
+    SearchPage(),
+    ChatPage(),
   ];
 
   int currentIndex = 0;

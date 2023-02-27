@@ -3,10 +3,9 @@ import 'package:get/get.dart';
 
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-import '../intro_screens/intro_page_1.dart';
-import '../intro_screens/intro_page_2.dart';
-import '../intro_screens/intro_page_3.dart';
-import 'home_page.dart';
+import '../screens/intro/intro_page_1.dart';
+import '../screens/intro/intro_page_2.dart';
+import '../screens/intro/intro_page_3.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
@@ -71,7 +70,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                 onLastPage
                     ? GestureDetector(
                         onTap: () => Get.to(
-                          () => const HomePage(),
+                          () => null,
                         ),
                         child: const Text(
                           "Done",
